@@ -7,7 +7,7 @@ public class CountingTool {
         int choice = scan.nextInt();
 
         for (int i = 0; i <= choice; i++) {
-            System.out.println(i);
+            System.out.print(i + " ");
         }
 
 
