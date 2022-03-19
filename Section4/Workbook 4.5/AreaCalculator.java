@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class AreaCalculator {
     public static void main(String[] args) {
         System.out.println("Thank you for using the area calculator");
