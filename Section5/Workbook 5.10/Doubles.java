@@ -7,9 +7,10 @@ public class Doubles {
 
         */
         
-        int dice1 = rollDice();
-        int dice2 = rollDice();
+        int dice1 = 0;
+        int dice2 = -1;
         
+
         /* Task 3
         1. Set up a loop that keeps running while the two dice aren't the same.
         2. During each run, re-roll the dice and print the two values. 
@@ -34,7 +35,7 @@ public class Doubles {
      * 
      */
     public static int rollDice() {
-        int randomNumber = (int)Math.floor(Math.random()*(6-1+1)+1);
+        int randomNumber = (int)(Math.random()*6+1);
         return randomNumber;
     }
 
