@@ -4,11 +4,9 @@ public class Exams {
         System.out.println("It's time to take your 5th year exams. Please, take your seats.\n");
         //Task 1: Create an array that stores 5 students: "Harry", "Neville", "Ron", "Hermione", "Seamus"
         String[] name = {"Harry", "Neville", "Ron", "Hermione", "Seamus"};
-        System.out.println(name[0] + ", you will take seat 0");
-        System.out.println(name[1] + ", you will take seat 1");
-        System.out.println(name[2] + ", you will take seat 2");
-        System.out.println(name[3] + ", you will take seat 3");
-        System.out.println(name[4] + ", you will take seat 4");
+        for (int i = 0; i < name.length; i++){
+            System.out.println(name[i] + ", you will take seat " + i);
+        }
 
         //Task 2: Assign each student a seat according to their index in the array.
         //           print: " <student at index 0> ", you will take seat 0. 
