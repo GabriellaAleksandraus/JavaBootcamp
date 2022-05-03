@@ -5,7 +5,7 @@ public class Bank {
         Scanner scan = new Scanner(System.in);
         System.out.println("\n****ROYAL BANK OF JAVA****");
         System.out.println("Are you here to get a mortgage? (yes or no)");
-        String decision = scan.next();
+        String decision = scan.nextLine();
         // Task 1 - Pick up the user's decision.
 
         // Task 2 - Print this if the decision is "yes"
@@ -15,16 +15,14 @@ public class Bank {
                     "\nAnd, how much do you owe in credit card debt?");
             double savings = scan.nextDouble();
             double debt = scan.nextDouble();
-            System.out.println(savings);
-            System.out.println(debt);
             // Task 3 - Pick up each value
             System.out.println("\nHow many years have you worked for?");
             int yearsWorked = scan.nextInt();
-            System.out.println(yearsWorked);
+            scan.nextLine();
             // Task 4 - Pick up number of years
 
             System.out.println("What is your name?");
-            String name = scan.next();
+            String name = scan.nextLine();
             // Task 5 - Pick up the user's name
 
             // Task 6 - Approve the mortgage if they meet the requirements (see article)
