@@ -1,17 +1,15 @@
 public class ReturnValues {
     public static void main(String[] args) {
 
-        double length = -3.1;
+        double length = 3.1;
         double width = 2.3;
         String option = "area";
         double area = measureRectangle(length, width, option);
         stringPrinter(length, width, area, "area");
 
-        length = 3.1;
-        width = 2.3;
         option = "perimeter";
-        area = measureRectangle(length, width, option);
-        stringPrinter(length, width, area, "perimeter");
+        double perimeter = measureRectangle(length, width, option);
+        stringPrinter(length, width, perimeter, "perimeter");
 
 
     }
@@ -23,17 +21,20 @@ public class ReturnValues {
             System.exit(0);
         }
         switch (option){
-            case "area": return length * width;
-            case "perimeter": return 2 * (length * width);
-            default: return 404;
+            case "area": 
+                return length * width;
+            case "perimeter": 
+                return 2 * (length * width);
+            default: 
+                return -1;
         }
         //double area = length * width;
         //System.out.println(length + " * " + width + " = " + area + "\n");
         //return area;
     }
 
-    public static void stringPrinter(double length, double width, double area, String option) {
-        System.out.println(option + ": " + length + " * " + width + " = " + area + "\n");
+    public static void stringPrinter(double length, double width, double result, String option) {
+        System.out.println("For a lenght of " + length + " and a width of " + width + " the " + option + " is " + result + "\n");
 
     }
 
