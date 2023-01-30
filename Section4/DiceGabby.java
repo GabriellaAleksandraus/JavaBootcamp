@@ -29,8 +29,8 @@ public class DiceGabby {
         scan.close();
     }
 
-    public static boolean checkWin(int guesses, int rolles){
-        return (rolles < guesses && (guesses - rolles) < 3);
+    public static boolean checkWin(int guesses, int rolls){
+        return (rolls < guesses && (guesses - rolls) < 3);
     }
 
     public static int getGuess(Scanner scan) {
