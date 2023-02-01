@@ -31,8 +31,8 @@ public class RockPaperScissors {
         if (playAnswer.equals("yes")) {
             System.out.println("Great!");
             System.out.println("rock - paper - scissors, shoot! \n");
-            String usersChoice = scan.nextLine();
-            System.out.println("users choice: " + usersChoice);
+            String yourChoice = scan.nextLine();
+            System.out.println("users choice: " + yourChoice);
             String computerChoice = computerChoice();
             System.out.println("computers choice: " + computerChoice);
 
@@ -59,7 +59,7 @@ public class RockPaperScissors {
 
     public static String computerChoice() {
         double rand_value = Math.random();
-        int computer_value = (int)rand_value*2;
+        int computer_value = (int)rand_value*3;
         if (computer_value == 0) {
             return "rock";
         }if (computer_value == 1) {
@@ -104,6 +104,18 @@ public class RockPaperScissors {
      */
 
     public static String result(String yourChoice, String computerChoice) {
+        if (yourChoice.equals("rock") && computerChoice.equals("scissors") 
+        || yourChoice.equals("paper") && computerChoice.equals("rock")
+        || yourChoice.equals("scissors") && computerChoice.equals("paper")){
+            String result = "You win!";
+        }if (yourChoice.equals("scissors") && computerChoice.equals("rock") 
+        || yourChoice.equals("rock") && computerChoice.equals("paper")
+        || yourChoice.equals("paper") && computerChoice.equals("scissors")){
+            String result = "You lose";
+        }else{
+            String result = "You lose!";
+        }
+
         String result = "";
 
         return result;
